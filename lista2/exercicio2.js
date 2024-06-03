@@ -39,5 +39,10 @@ class Retangulo extends Objeto{
 
 }
 
-let retangulo = new Retangulo (10,5);
+let retangulo = new Retangulo(10,5);
 retangulo.verificarSeEquadrado();
+console.log(retangulo.calcularArea());
+
+
+let triangulo = new Triangulo(10, 5 , "triangulo");
+console.log(triangulo.calcularArea());
