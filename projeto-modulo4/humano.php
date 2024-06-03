@@ -6,12 +6,11 @@
         private $contato;
         private $animal;
 
-        public function __construct($nome, $idade, $endereco, $contato, $animal) {
+        public function __construct($nome, $idade, $endereco, $contato) {
             $this->nome = $nome;
             $this->idade = $idade;
             $this->endereco = $endereco;
             $this->contato = $contato;
-            $this->animal = $animal;
         }
 
         public function getNome() {

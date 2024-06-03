@@ -1,11 +1,9 @@
 <?php 
     require_once 'animal.php';
 
-    class Gato extends Animal {
+    class Porco extends Animal {
         public function falar() {
-            return "Miau miau!!!\n";
+            return "Oinc oinc! \n";
         }
     }
-
-
 ?>

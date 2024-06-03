@@ -1,21 +1,23 @@
 <?php
 
 
-    class Animal  {
+    abstract class Animal  {
         private $nome;
         private $raca;
         private $quantPatas;
         private $cor;
         private $peso;
         private $tamanho;
+        private $humano;
         
-        public function __construct($nome, $raca, $quantPatas, $cor, $peso, $tamanho) {
+        public function __construct($nome, $raca, $quantPatas, $cor, $peso, $tamanho, $humano) {
             $this->nome = $nome;
             $this->raca = $raca;
             $this->quantPatas = $quantPatas;
             $this->cor = $cor;
             $this->peso = $peso;
             $this->tamanho = $tamanho;
+            $this->humano = $humano;
             
         }
 
@@ -37,6 +39,10 @@
         public function getTamanho() {
             return $this->tamanho;
         }
+        public function getHumano() {
+            return $this->humano;
+        }
+
 
         public function setNome($nome) {
             $this->nome = $nome;
@@ -56,9 +62,11 @@
         public function setTamanho($tamanho) {
             $this->tamanho = $tamanho;
         }
-        
-        public function falar() {
-
+        public function setHumano($humano) {
+            $this->humano = $humano;
         }
+
+        
+        abstract function falar();
         
     }
